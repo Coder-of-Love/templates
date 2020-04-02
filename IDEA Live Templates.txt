@@ -1,0 +1,53 @@
+// Settings -> Live Templates -> $Language
+
+
+
+// ----------
+// Javascript
+// ----------
+
+// cl
+
+// TODO Стереть console.log
+console.log($END$);
+
+
+
+// -----
+// React
+// -----
+
+// rrc (modified)
+
+import React from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+
+
+const mapStateToProps = state => ({
+
+});
+
+const mapDispatchToProps = dispatch => ({
+
+});
+
+@connect(mapStateToProps, mapDispatchToProps)
+export default class $componentName$ extends React["Component"] {
+    static displayName = "$componentName$";
+
+    render() {
+        return (
+            <div>
+                $END$
+            </div>
+        );
+    }
+}
+
+$componentName$.defaultProps = {
+
+};
+$componentName$.propTypes = {
+
+};
