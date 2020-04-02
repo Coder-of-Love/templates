@@ -8,7 +8,7 @@
 
 // cl
 
-// TODO Стереть console.log
+// TODO Remove console.log
 console.log($END$);
 
 
