@@ -1,0 +1,51 @@
+@import "include-media";
+
+$images: '../../common/images';
+$fonts: '../../common/fonts';
+
+$breakpoints: (
+		'phone': 320px,
+		'tablet': 768px,
+		'pc': 1024px,
+		'design': 1960px,
+);
+
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin flexRowStart {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+}
+
+@mixin shadow9($x: 2px) {
+	box-shadow: 0 $x $x rgba(0, 0, 0, 0.09);
+}
+
+@mixin shadow16($x: 2px) {
+	box-shadow: 0 $x $x rgba(0, 0, 0, 0.16);
+}
+
+@mixin attentionSign {
+	content: '!';
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: calc(50% - 15px);
+	left: 20px;
+	color: var(--green);
+	border: 3px solid var(--green);
+	border-radius: 50%;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	line-height: 24px;
+}
+
+@mixin shake {
+	animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+}
