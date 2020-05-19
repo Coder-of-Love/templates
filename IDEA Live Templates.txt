@@ -51,3 +51,28 @@ $componentName$.defaultProps = {
 $componentName$.propTypes = {
 
 };
+
+/* ue (useEffect) */
+
+useEffect(
+    () => {$END$},
+    []
+);
+
+/* um (useMemo) */
+
+useMemo(
+    () => {$END$},
+    []
+);
+
+/* ur (useReducer) */
+
+const [state, dispatch] = useReducer(
+		(state, payload) => {
+			const { /*TODO*/ } = payload;
+			return { ...state, /*TODO*/ }
+		},
+		{ /*TODO*/ }
+);
+
