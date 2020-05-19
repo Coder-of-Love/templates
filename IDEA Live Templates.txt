@@ -6,7 +6,7 @@
 // Javascript
 // ----------
 
-// cl
+/* cl */
 
 // TODO Remove console.log
 console.log($END$);
@@ -17,7 +17,7 @@ console.log($END$);
 // React
 // -----
 
-// rrc (modified)
+/* rrc (modified) */
 
 import React from 'react';
 import PropTypes from 'prop-types';
