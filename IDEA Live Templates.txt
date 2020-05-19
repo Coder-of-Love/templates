@@ -69,10 +69,10 @@ useMemo(
 /* ur (useReducer) */
 
 const [state, dispatch] = useReducer(
-		(state, payload) => {
-			const { /*TODO*/ } = payload;
-			return { ...state, /*TODO*/ }
-		},
-		{ /*TODO*/ }
+    (state, payload) => {
+        const { /*TODO*/ } = payload;
+        return { ...state, /*TODO*/ }
+    },
+    { /*TODO*/ }
 );
 
