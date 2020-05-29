@@ -97,3 +97,13 @@ const mapDispatchToProps = dispatch => ({
 const mapDispatchToProps = dispatch => bindActionCreators(
 	{  }, dispatch
 );
+
+// ~~~
+// CSS
+// ~~~
+
+/* cl (Custom HTML Label Rule) */
+
+[cl-~=] {
+    $END$
+}
