@@ -80,7 +80,7 @@ const [state, dispatch] = useReducer(
 // React-Redux
 // ~~~~~~~~~~~
 
-/* mstp (mapStateToProps) */
+/* msp (mapStateToProps) */
 
 const mapStateToProps = state => ({
     $END$
