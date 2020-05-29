@@ -76,3 +76,12 @@ const [state, dispatch] = useReducer(
     { /*TODO*/ }
 );
 
+// ~~~~~~~~~~~
+// React-Redux
+// ~~~~~~~~~~~
+
+/* mstp (mapStateToProps) */
+
+const mapStateToProps = state => ({
+    $END$
+});
