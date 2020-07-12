@@ -102,8 +102,14 @@ const mapDispatchToProps = dispatch => bindActionCreators(
 // CSS
 // ~~~
 
-/* cl (Custom HTML Label Rule) */
+/* cl (Custom HTML Label Rule): [ruleset list] */
 
 [cl-~=] {
+    $END$
+}
+
+/* clc (Custom HTML Label 'cl-ctrl'): [ruleset list] */
+
+[cl-ctrl~=] {
     $END$
 }
