@@ -1,0 +1,113 @@
+// ~~~~~~~~~
+// Variables
+// ~~~~~~~~~
+
+TM_FILENAME_BASE = capitalize(camelCase(fileNameWithoutExtension()))
+TM_TAG = lowercaseAndDash(fileNameWithoutExtension())
+
+// ~~~~~~~~~
+// Templates
+// ~~~~~~~~~
+
+/**************************************
+* rrc (stateful component - modified) *
+**************************************/
+
+import React from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+
+
+const mapStateToProps = state => ({
+
+});
+
+const mapDispatchToProps = dispatch => ({
+
+});
+
+@connect(mapStateToProps, mapDispatchToProps)
+export default class $componentName$ extends React["Component"] {
+    static displayName = "$componentName$";
+
+    render() {
+        return (
+            <div>
+                $END$
+            </div>
+        );
+    }
+}
+
+$componentName$.defaultProps = {
+
+};
+$componentName$.propTypes = {
+
+};
+
+
+/****************************************
+* rscp (stateless component - modified) *
+****************************************/
+
+import React from 'react';
+import PropTypes from 'prop-types';
+
+
+const tag = '$TM_TAG$';
+function $TM_FILENAME_BASE$({ title, items }) {
+ return (
+  <div cl-wrapper={ tag }>
+    <div cl-content={ tag }>
+      <div cl-header={ tag }></div>
+      <div cl-content={ tag }>
+        <div cl-title={ tag }>{ title }</div>
+        <div cl-container={ tag }>
+          { Array.isArray(items) && items.map(({}) => (
+            <div cl-item={ tag }>
+              $END$
+            </div>
+          ) ) }
+        </div>
+      </div>
+    </div>
+  </div>
+ );
+}
+
+$TM_FILENAME_BASE$.propTypes = {
+  title: PropTypes.string,
+  items: PropTypes.array,
+  // TODO
+};
+
+export default $TM_FILENAME_BASE$;
+
+/*****************
+* ue (useEffect) *
+*****************/
+
+useEffect(() => {
+    $END$
+}, []);
+
+/***************
+* um (useMemo) *
+***************/
+
+useMemo(() => {
+    $END$
+}, []);
+
+/******************
+* ur (useReducer) *
+******************/
+
+const [state, dispatch] = useReducer(
+    (state, payload) => {
+        const { /*TODO*/ } = payload;
+        return { ...state, /*TODO*/ }
+    },
+    { /*TODO*/ }
+);

@@ -1,0 +1,17 @@
+/* msp (mapStateToProps) */
+
+const mapStateToProps = state => ({
+    $END$
+});
+
+/* mdp (mapDispatchToProps) */
+
+const mapDispatchToProps = dispatch => ({
+    $END$
+});
+
+/* mdpa (mapDispatchToProps \w actions) */
+
+const mapDispatchToProps = dispatch => bindActionCreators(
+	{  }, dispatch
+);

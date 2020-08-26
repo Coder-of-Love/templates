@@ -1,0 +1,41 @@
+// ~~~~~~~~~
+// Variables
+// ~~~~~~~~~
+
+TM_TAG = lowercaseAndDash(fileNameWithoutExtension())
+
+// ~~~~~~~~~
+// Templates
+// ~~~~~~~~~
+
+/* cl (Custom HTML Label Rule): [ruleset list] */
+
+$$tagToDoRename: '$END$';
+
+[cl-container~=#{$$tagToDoRename}] {
+
+}
+
+[cl-ctrl~=#{$$tagToDoRename}] {
+
+}
+
+[cl-header~=#{$$tagToDoRename}] {
+
+}
+
+[cl-item~=#{$$tagToDoRename}] {
+
+}
+
+[cl-title~=#{$$tagToDoRename}] {
+
+}
+
+[cl-subtitle~=#{$$tagToDoRename}] {
+
+}
+
+[cl-page~=#{$$tagToDoRename}] {
+
+}
